@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+   <style>
+    /* *{
+        background-color: black;
+    } */
+        p{
+            color: blueviolet;
+            font-size: 35px;
+        }
+        .elem{
+            background-color: yellowgreen;
+        }
+        [type="text"]{
+            background-color: rebeccapurple;
+        }
+        /* input{
+            background-color: aqua;
+        } */
+
+        div{
+            width:150px; 
+             /* height: 600px; */
+             /* border-color: red;
+             border-width: 2px;
+             border-style: dotted; */
+             /* border:red 2px dashed */
+             /* border: dashed 2px red; */
+             /* outline: 2px red solid;
+             outline- */
+             /* padding-left: 20px; */
+             /* padding: 10px  30px 50px 0;   top right bottom left */
+         margin-left: auto;
+        margin-right:auto ;
+        border-color: #874f4f;
+             border-width: 2px;
+             border-style: solid;
+             border-radius: 30px;
+             padding: 30px;
+             /* border-top-style: dotted;
+             border-left-style: solid; */
+             } 
+            img{
+                display: block;
+                /* margin-left: auto;
+                margin-right:auto ; */
+                margin :0 auto
+            }
+           
+    </style>
+    
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse provident pariatur maiores necessitatibus reiciendis ipsam. Adipisci, nisi? Deserunt reiciendis sunt quos quae similique illo minima accusantium tempore, ullam quis magnam.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <form action="page2.html" method="get">
+       
+<fieldset>
+    <legend>log in </legend>
+    <label for="in1"><u>N</u>ame</label> <input tabindex="2" accesskey="n" id="in1" placeholder="enter your name" type="text" name="userName">
+        <br>
+       <label><u>P</u>assword</label> <input  tabindex="1" type="password" name="pass" accesskey="p">
+    <br>
+    <input type="checkbox" name="c1" checked="checked"><label>reading</label>
+    <input type="checkbox" name="c2"><label>swimming</label>
+    <input type="checkbox" name="c3"><label>playing</label>
+   
+<br>
+
+    <input type="radio" name="r1" value="milk"><label>milk</label>
+    <input type="radio" name="r1" value="tea"><label>tea</label>
+    <input type="radio" name="r1" value="coffee"><label>coffee</label>
+   
+    <br>
+    <select  >
+        <optgroup label="G1" disabled>
+        <option>html</option>
+        <option>CSS</option>
+        <option>JS</option>
+    </optgroup>
+    <optgroup label="G2">
+        <option >html</option>
+        <option selected>CSS</option>
+        <option>JS</option>
+    </optgroup>
+    </select>
+<textarea rows="5" cols="50"></textarea>
+    <br>
+    <input type="submit" value="send data">
+    <input type="reset" value="clear">
+    
+</fieldset>
+
+
+
+</form>
+    <!-- http://127.0.0.1:5500/page2.html?userName=Ahmed&pass=566 -->
+    <!-- ?userName=Ahmed&pass=56 -->
+
+
+
+
+    <table border="2" bordercolor="red">
+        <caption>food </caption>
+        <tfoot>
+            <td>Carrot</td>
+            <td>Orange</td>
+            
+            <td>red</td>
+        </tfoot>
+        <tr>
+            <td>Name</td>
+            <td>Color</td>
+            <td>Name</td>
+            <td>Color</td>
+        </tr>
+        <tr>
+            <td>tomato</td>
+            <td>red</td>
+            <td rowspan="3">apple</td>
+            <td>yellow</td>
+        </tr>
+        <tr>
+            <td>Cucumber</td>
+            <td>darkgreen</td>
+           
+            <td>green</td>
+        </tr>
+        
+
+        <thead>
+            <th colspan="2">Vegetables</th>
+            <th colspan="2">Fruits</th>
+
+        </thead>
+    </table>
+
+
+    <p style="color: aqua; font-weight: bold;">Hello React group</p>
+    <h1 class="elem">hiiiiiii</h1>
+    <p class="elem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo modi ea laboriosam est, cupiditate quia, natus iste nobis amet, asperiores aliquam culpa adipisci rem! Dolor consequuntur molestiae ratione accusantium itaque?</p>
+<p id="p1">dummmy data</p>
+<!-- <div id="img"> -->
+<img src="./CPTPILLOWS_9db8.jpg"  usemap="#myMap">
+
+<!-- </div> -->
+<map name="myMap">
+    <area shape="rect" coords="102,39,231,181" href="https://twitter.com/">
+</map>
+
+
+<!-- <iframe width="600" height="600" src="https://abc.com/"></iframe>
+<iframe width="600" height="600" src="./page2.html"></iframe> -->
+
+
+
+
+<ul>
+    <li><a href="home.html" target="myFrame">Home</a></li>
+    <li><a href="profile.html" target="myFrame">Profile</a></li>
+
+</ul>
+
+<iframe name="myFrame" src="page2.html"></iframe>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
