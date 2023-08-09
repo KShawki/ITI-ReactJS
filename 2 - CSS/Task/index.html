@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: pink;
+      }
+
+      .flex {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='flex'>
+      <form action="" method='POST'>
+        <table border="10">
+          <tr>
+            <td width='150'>First Name:</td>
+            <td width='150'>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter First Name:"
+                style='width: 100%;'
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>
+              <input
+                type="text"
+                name="LastName"
+                placeholder="Enter Last Name:"
+                style='width: 100%;'
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password:"
+                style='width: 100%;'
+              />
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2">Gender:</th>
+            <td>
+              <input type="radio" name="male" id="male" />
+              <label for="male">Male</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="female" id="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Birthday:</td>
+            <td>
+              <input type="date" name="date" id="date" style='width: 100%;'>
+            </td>
+          </tr>
+          <tr>
+            <th colspan='2' height='50'><u>Interests</u></th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="sports" id="sports">
+              <label for="sports">Sport</label>
+            </td>
+            <td>
+              <input type="checkbox" name="quran" id="quran">
+              <label for="quran">Quran</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="Anime" id="Anime">
+              <label for="Anime">Anime</label>
+            </td>
+            <td>
+              <input type="checkbox" name="CS" id="CS">
+              <label for="CS">CS</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="Fashion" id="Fashion">
+              <label for="Fashion">Fashion</label>
+            </td>
+            <td>
+              <input type="checkbox" name="movies" id="movies">
+              <label for="movies">movies</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2'>  
+              <center>
+
+                <input type="submit" value="Submit" style='padding: 5px 50px; margin: 4px 0;'>
+              </center>          
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
