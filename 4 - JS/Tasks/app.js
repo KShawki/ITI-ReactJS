@@ -60,9 +60,9 @@
 // Script 4
 // ----------------------------------------
 
-// const evenOdd = () => {
-//   var i = parseInt(prompt("enter number: ")); 
-//   alert(i%2 == 0? "Even": "Odd");
-// }
-// evenOdd(); 
+const evenOdd = () => {
+  var i = parseInt(prompt("enter number: ")); 
+  alert(i%2 == 0? "Even": "Odd");
+}
+evenOdd(); 
 
