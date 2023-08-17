@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task 2</title>
-</head>
-<body>
-  
-  <script src='app.js'></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .flex {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #fff;
+      }
+
+      .btn:hover {
+        transition: ease;
+      }
+
+      .green-btn {
+        width: 500px;
+        background-color: #91c8e4;
+        border: 2px solid #4682a9;
+      }
+
+      input {
+        width: 500px;
+        height: 50px;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <button class="btn btn-primary" onclick="displayMsg()">
+        Display Message
+      </button>
+    </div>
+
+    <br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="flex">
+      <form action="registerationPage.html">
+        <div>
+          <p>Name:</p>
+          <input type="text" name="name" placeholder="Enter Your Name: " />
+        </div>
+        <br />
+        <div>
+          <p>Email Address:</p>
+          <input type="email" name="email" placeholder="Enter Your Mail: " />
+        </div>
+        <div>
+          <br />
+          <input type="submit" class="btn green-btn" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
