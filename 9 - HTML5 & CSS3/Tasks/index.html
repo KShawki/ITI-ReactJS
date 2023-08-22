@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mt-10 {
+        margin-top: 10px;
+      }
+
+      .item {
+        display: flex;
+        justify-content: left;
+        gap: 30px;
+        margin-top: 10px;
+      }
+
+      .item label {
+        width: 50px;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <div class="item">
+          <label for="red">Red: </label>
+          <input
+            name="red"
+            class="red"
+            type="range"
+            min="0"
+            max="266"
+            step="1"
+            value="10"
+            onchange="setTitleColor()"
+          />
+        </div>
+        <div class="item">
+          <label for="green">Green: </label>
+          <input
+            name="green"
+            class="green"
+            type="range"
+            min="0"
+            max="266"
+            step="1"
+            value="0"
+            onchange="setTitleColor()"
+          />
+        </div>
+        <div class="item">
+          <label for="blue">Blue: </label>
+          <input
+            name="blue"
+            class="blue"
+            type="range"
+            min="0"
+            max="266"
+            step="1"
+            value="0"
+            onchange="setTitleColor()"
+          />
+        </div>
+      </div>
+
+      <h1 class="mt-10 text-element">Lorem ipsum dolor sit amet consectetur</h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

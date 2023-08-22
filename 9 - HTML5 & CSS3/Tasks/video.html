@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .df {
+        display: flex;
+        margin-top: 30px;
+        gap: 8px;
+      }
+
+      .btn {
+        padding: 5px 20px;
+        background-color: #fff;
+        border-radius: 1px;
+        border: 3px solid black;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        src="../Demos/video/frozen.mp4"
+        width="430"
+        poster="../Demos/image/frozen.jpg"
+      ></video>
+      <div class="df">
+        <input class="btn" type="button" onclick="mute()" value="Mute" />
+        <input class="btn" type="button" onclick="backword()" value="<" />
+        <input class="btn" type="button" onclick="startVideo()" value="Start" />
+        <input class="btn" type="button" onclick="stopVideo()" value="Stop" />
+        <input class="btn" type="button" onclick="forword()" value=">" />
+        <input class="btn" type="button" onclick="fullScreen()" value="[   ]" />
+      </div>
+    </div>
+
+    <script>
+      var video = document.getElementsByTagName('video')[0];
+      function startVideo() {
+        video.play();
+      }
+
+      function stopVideo() {
+        video.pause();
+      }
+
+      function backword() {
+        video.currentTime -= 10;
+      }
+
+      function forword() {
+        video.currentTime += 10;
+      }
+
+      function mute() {
+        video.mute();
+      }
+
+      function fullScreen() {
+        video.requestFullscreen();
+      }
+    </script>
+  </body>
+</html>
