@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 30px;
+        font-size: 26px;
+      }
+
+      .btn {
+        padding: 7px 20px;
+        font-weight: bold;
+      }
+
+      .primary {
+        background-color: #337ccf;
+        border: 3px solid #191d88;
+        color: white;
+      }
+
+      .primary:hover {
+        background-color: #2362a9;
+        border: 3px solid #191d88;
+        color: white;
+      }
+
+      .danger {
+        background-color: #c70039;
+        border: 3px solid #900c3f;
+        color: white;
+      }
+
+      .danger:hover {
+        background-color: #aa0030;
+        border: 3px solid #900c3f;
+        color: white;
+      }
+
+      .secondary {
+        background-color: hsl(254, 37%, 68%);
+        border: 3px solid #3d246c;
+        color: white;
+      }
+      .secondary:hover {
+        background-color: hsl(254, 23%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <div class="icons">
+        <input
+          type="button"
+          value="Previous"
+          class="primary btn"
+          onclick="PreviousPhoto()"
+        />
+        <input
+          type="button"
+          value="SlideShow"
+          class="secondary btn"
+          onclick="SlideShow()"
+        />
+        <input
+          type="button"
+          value="Next"
+          class="danger btn"
+          onclick="NextPhoto()"
+        />
+      </div>
+
+      <div id="gallery">
+        <img id="image" src="1.jpg" alt="Image" />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
