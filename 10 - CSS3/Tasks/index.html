@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .container {
+        border: 2px solid rgb(142, 142, 142);
+        border-radius: 4px;
+        padding: 20px 40px;
+      }
+
+      input:invalid {
+        outline: 2px solid red;
+      }
+
+      span {
+        display: none;
+      }
+
+      input:invalid + span {
+        display: block;
+        margin-top: 10px;
+        padding: 4px 10px;
+        border: 1px solid red;
+        background-color: #ffe2e2;
+      }
+
+      input {
+        width: 100%;
+        padding: 4px;
+        margin-top: 4px;
+      }
+
+      button {
+        width: 150px;
+        height: 40px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+      }
+
+      button:hover {
+        transition: all 0.3s;
+        background-color: #870303;
+        
+        color: white;
+        border: none;
+        box-shadow: 0 3px 10px #0077dfa3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="container">
+        <h1>Change Email Address:</h1>
+        <label for="">Email Address: </label>
+        <input type="email" required placeholder="Enter Email Address: " />
+        <span> * Required Field</span>
+        <br />
+        <label for="">Password: </label>
+        <input type="password" required placeholder="Password: " />
+        <span> * Required Field</span>
+
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

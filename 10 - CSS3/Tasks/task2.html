@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @keyframes imgAnimation {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.2;
+        }
+      }
+
+      #img:hover {
+        /* animation: imgAnimation 3s ease-in-out 0.3 infinite alternate fill-mode; */
+        animation-name: imgAnimation;
+        animation-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="img" src="1.gif" alt="" width="600" />
+  </body>
+</html>
