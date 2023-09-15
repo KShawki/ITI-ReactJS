@@ -1,5 +1,13 @@
 # ITI - Frontend Development Using ReactJS
 
+## What is ITI?
+
+The Information Technology Institute (ITI) is a renowned institution in Egypt that focuses on providing high-quality education and training in various fields of information technology and computer science.
+
+## Program Information
+
+Frontend Development Using ReactJS Program aims to introduce and train on the latest libraries and technology in the field of FrontEnd Development. The duration of the program is 120 hours over 6 weeks. The day consists of a theoretical explanation for 3 hours, and then that lab for another 3 hours, we do some assignments and they are corrected.
+
 ## Recording
 
 | Day | Topic                     | Date       | Videos                                                                                                                 |
